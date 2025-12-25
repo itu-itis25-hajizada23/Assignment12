@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+<h2>Job Application Form</h2>
+
+<form id="applicationForm">
+
+    <label>TCKN:</label><br>
+    <input type="text" id="tckn"><br><br>
+
+    <label>Full Name:</label><br>
+    <input type="text" id="fullName"><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" id="dob"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" checked> Male
+    <input type="radio" name="gender" value="Female"> Female<br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox" name="skills" value="Java"> Java
+    <input type="checkbox" name="skills" value="Python"> Python
+    <input type="checkbox" name="skills" value="C"> C<br><br>
+
+    <label>Salary Type:</label><br>
+    <select id="salaryType">
+        <option value="Monthly">Monthly</option>
+        <option value="Yearly">Yearly</option>
+    </select><br><br>
+
+    <label>Salary Amount:</label><br>
+    <input type="number" id="salaryAmount"><br><br>
+
+    <label>Experience (years):</label><br>
+    <input type="number" id="experience"><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<p id="result"></p>
+
+<!-- SAKIN YERİNİ DEĞİŞTİRME -->
+<script src="TCKN_validation.js"></script>
+<script src="FullName_validation.js"></script>
+<script src="DOB_validation.js"></script>
+<script src="Salary_validation.js"></script>
+<script src="Experience_validation.js"></script>
+<script src="form_handler.js"></script>
+
+</body>
+</html>
